@@ -6,10 +6,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav me-auto p-3 p-lg-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="{{url('/')}}" class="nav-item nav-link active">Home</a>
             <!--                <a href="about.html" class="nav-item nav-link">About Us</a>-->
-            <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="project.html" class="nav-item nav-link">Gallery</a>
+            <a href="{{url('/services')}}" class="nav-item nav-link">Services</a>
+            <a href="{{url('/gallery')}}" class="nav-item nav-link">Gallery</a>
             <!--                <div class="nav-item dropdown">-->
             <!--                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
             <!--                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">-->
@@ -19,7 +19,7 @@
             <!--                        <a href="404.html" class="dropdown-item">404 Page</a>-->
             <!--                    </div>-->
             <!--                </div>-->
-            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <a href="{{url('/contact')}}" class="nav-item nav-link">Contact Us</a>
         </div>
     </div>
 </nav>
