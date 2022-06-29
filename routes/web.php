@@ -27,5 +27,5 @@ Route::get('/contact', function () {
 });
 
 Auth::routes();
-
+Route::resource('website-info', \App\Http\Controllers\WebsiteInfoController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
