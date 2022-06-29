@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -64,9 +65,12 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $count = User::all()->where('is_active', true)->count();
         return User::create([
+            'index' => $count + 1,
             'name' => $data['name'],
             'email' => $data['email'],
+            'role_id' => Role::where('code', 'editor')->firstOrFail()->id,
             'password' => Hash::make($data['password']),
         ]);
     }
