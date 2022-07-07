@@ -12,10 +12,9 @@
         <div class="col-lg-6 px-5 text-end">
             <small>Follow us:</small>
             <div class="h-100 d-inline-flex align-items-center">
-                <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                @foreach($socialNetworks as $socialNetwork)
+                    <a class="btn-square text-primary border-end rounded-0" href="{{ $socialNetwork->url }}"><i class="{{ $socialNetwork->icon }}"></i></a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -52,7 +51,7 @@
                         </div>
                         <div class="ps-3">
                             <p class="mb-2">Call Us</p>
-                            <h6 class="mb-0">+012 345 6789</h6>
+                            <h6 class="mb-0">{{ $websiteInfo->phone_1 }}</h6>
                         </div>
                     </div>
                 </div>
@@ -63,7 +62,7 @@
                         </div>
                         <div class="ps-3">
                             <p class="mb-2">Email Us</p>
-                            <h6 class="mb-0">info@example.com</h6>
+                            <h6 class="mb-0">{{ $websiteInfo->email }}</h6>
                         </div>
                     </div>
                 </div>

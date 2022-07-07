@@ -13,18 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('website');
-});
-Route::get('/gallery', function () {
-    return view('gallery');
-});
-Route::get('/services', function () {
-    return view('services');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/', [\App\Http\Controllers\WebsiteController::class, 'index'])->name('website');
+Route::get('/gallery', [\App\Http\Controllers\GallerySiteController::class, 'index'])->name('gallery');
+Route::get('/services', [\App\Http\Controllers\ServicesSiteController::class, 'index'])->name('services');
+Route::get('/contact', [\App\Http\Controllers\ContactSiteController::class, 'index'])->name('contact');
 
 Auth::routes();
 Route::resource('website-info', \App\Http\Controllers\WebsiteInfoController::class);
