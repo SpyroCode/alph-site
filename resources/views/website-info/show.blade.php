@@ -21,10 +21,6 @@
                     <div class="card-body">
 
                         <div class="form-group">
-                            <strong>Index:</strong>
-                            {{ $websiteInfo->index }}
-                        </div>
-                        <div class="form-group">
                             <strong>Address:</strong>
                             {{ $websiteInfo->address }}
                         </div>
@@ -43,10 +39,6 @@
                         <div class="form-group">
                             <strong>Email:</strong>
                             {{ $websiteInfo->email }}
-                        </div>
-                        <div class="form-group">
-                            <strong>Is Active:</strong>
-                            {{ $websiteInfo->is_active }}
                         </div>
 
                     </div>

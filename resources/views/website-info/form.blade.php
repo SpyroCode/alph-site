@@ -1,11 +1,6 @@
 <div class="box box-info padding-1">
     <div class="box-body">
-        
-        <div class="form-group">
-            {{ Form::label('index') }}
-            {{ Form::text('index', $websiteInfo->index, ['class' => 'form-control' . ($errors->has('index') ? ' is-invalid' : ''), 'placeholder' => 'Index']) }}
-            {!! $errors->first('index', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
+
         <div class="form-group">
             {{ Form::label('address') }}
             {{ Form::text('address', $websiteInfo->address, ['class' => 'form-control' . ($errors->has('address') ? ' is-invalid' : ''), 'placeholder' => 'Address']) }}
@@ -30,11 +25,6 @@
             {{ Form::label('email') }}
             {{ Form::text('email', $websiteInfo->email, ['class' => 'form-control' . ($errors->has('email') ? ' is-invalid' : ''), 'placeholder' => 'Email']) }}
             {!! $errors->first('email', '<div class="invalid-feedback">:message</div>') !!}
-        </div>
-        <div class="form-group">
-            {{ Form::label('is_active') }}
-            {{ Form::text('is_active', $websiteInfo->is_active, ['class' => 'form-control' . ($errors->has('is_active') ? ' is-invalid' : ''), 'placeholder' => 'Is Active']) }}
-            {!! $errors->first('is_active', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
     </div>

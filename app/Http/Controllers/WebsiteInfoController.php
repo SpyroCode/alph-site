@@ -90,11 +90,10 @@ class WebsiteInfoController extends Controller
      */
     public function update(Request $request, WebsiteInfo $websiteInfo)
     {
-        request()->validate(WebsiteInfo::$rules);
 
         $websiteInfo->update($request->all());
 
-        return redirect()->route('website-infos.index')
+        return redirect()->route('website-info.index')
             ->with('success', 'WebsiteInfo updated successfully');
     }
 
