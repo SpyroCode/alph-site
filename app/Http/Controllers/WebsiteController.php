@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Gallery;
 use App\Models\SectionGallery;
 use App\Models\SocialNetwork;
-use App\Models\websiteInfo;
+use App\Models\WebsiteInfo;
 use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
