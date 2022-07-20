@@ -20,4 +20,5 @@ Route::get('/contact', [\App\Http\Controllers\ContactSiteController::class, 'ind
 
 Auth::routes();
 Route::resource('website-info', \App\Http\Controllers\WebsiteInfoController::class);
+Route::resource('galleries', \App\Http\Controllers\GalleryController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
