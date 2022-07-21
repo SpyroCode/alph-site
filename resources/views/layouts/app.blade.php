@@ -60,6 +60,7 @@
                                     <a class="dropdown-item" href="{{ route('home') }}">Dashboard </a>
                                     <a class="dropdown-item" href="{{ route('website-info.index') }}">Website Info </a>
                                     <a class="dropdown-item" href="{{ route('galleries.index') }}">Gallery </a>
+                                    <a class="dropdown-item" href="{{ route('services.index') }}">Services </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
