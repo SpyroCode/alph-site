@@ -16,7 +16,7 @@
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-light mb-4">Quick Links</h5>
                 <a class="btn btn-link" href="/">Home</a>
-                <a class="btn btn-link" href="/services">Services</a>
+                <a class="btn btn-link" href="/services-web">Services</a>
                 <a class="btn btn-link" href="/gallery">Gallery</a>
                 <a class="btn btn-link" href="/contact">Contact Ust</a>
             </div>

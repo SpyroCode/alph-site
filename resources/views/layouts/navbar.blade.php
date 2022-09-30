@@ -8,7 +8,7 @@
         <div class="navbar-nav me-auto p-3 p-lg-0">
             <a href="{{url('/')}}" class="nav-item nav-link @if(Request::is('/')) active @endif">Home</a>
             <!--                <a href="about.html" class="nav-item nav-link">About Us</a>-->
-            <a href="{{url('/services')}}" class="nav-item nav-link @if(Request::is('services')) active @endif">Services</a>
+            <a href="{{url('/services-web')}}" class="nav-item nav-link @if(Request::is('services-web')) active @endif">Services</a>
             <a href="{{url('/gallery')}}" class="nav-item nav-link @if(Request::is('gallery')) active @endif">Gallery</a>
             <!--                <div class="nav-item dropdown">-->
             <!--                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->

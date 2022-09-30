@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\WebsiteController::class, 'index'])->name('website');
 Route::get('/gallery', [\App\Http\Controllers\GallerySiteController::class, 'index'])->name('gallery');
-Route::get('/services', [\App\Http\Controllers\ServicesSiteController::class, 'index'])->name('services');
+Route::get('/services-web', [\App\Http\Controllers\ServicesSiteController::class, 'index'])->name('services-web');
 Route::get('/contact', [\App\Http\Controllers\ContactSiteController::class, 'index'])->name('contact');
 
 Auth::routes();
