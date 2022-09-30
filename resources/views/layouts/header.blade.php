@@ -26,7 +26,7 @@
 <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="row align-items-center top-bar">
         <div class="col-lg-4 col-md-12 text-center text-lg-start">
-            <a href="" class="navbar-brand m-0 p-0">
+            <a href="{{url('/')}}" class="navbar-brand m-0 p-0">
                 <h1 class="fw-bold text-primary m-0"><i class="fa fa-camera me-3"></i>Your logo</h1>
                 <!-- <img src="img/logo.png" alt="Logo"> -->
             </a>
