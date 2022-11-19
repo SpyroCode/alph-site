@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Service;
 use App\Models\SocialNetwork;
 use App\Models\WebsiteInfo;
 use Illuminate\Http\Request;
@@ -17,8 +18,9 @@ class ServicesSiteController extends Controller
             $id = $value->id;
         }
         $galleries = Gallery::all()->where('is_active', true);
+        $services = Service::all()->where('is_active', true);
         $socialNetworks = SocialNetwork::all()->where('is_active', true);
         $websiteInfo = WebsiteInfo::find($id);
-        return view('services', compact('galleries', 'socialNetworks', 'websiteInfo'));
+        return view('services', compact('services', 'socialNetworks', 'websiteInfo'));
     }
 }
