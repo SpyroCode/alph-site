@@ -10,6 +10,7 @@
             <!--                <a href="about.html" class="nav-item nav-link">About Us</a>-->
             <a href="{{url('/services-web')}}" class="nav-item nav-link @if(Request::is('services-web')) active @endif">Services</a>
             <a href="{{url('/gallery')}}" class="nav-item nav-link @if(Request::is('gallery')) active @endif">Gallery</a>
+            <a href="{{url('/about-me')}}" class="nav-item nav-link @if(Request::is('about-me')) active @endif">About me</a>
             <!--                <div class="nav-item dropdown">-->
             <!--                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>-->
             <!--                    <div class="dropdown-menu border-0 rounded-0 rounded-bottom m-0">-->
