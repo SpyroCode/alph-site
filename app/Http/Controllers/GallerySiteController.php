@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Service;
 use App\Models\SocialNetwork;
 use App\Models\WebsiteInfo;
 use Illuminate\Http\Request;
@@ -16,9 +17,10 @@ class GallerySiteController extends Controller
         foreach ($websiteInfos as $value){
             $id = $value->id;
         }
+        $services = Service::all()->where('is_active', true);
         $galleries = Gallery::all()->where('is_active', true);
         $socialNetworks = SocialNetwork::all()->where('is_active', true);
         $websiteInfo = WebsiteInfo::find($id);
-        return view('gallery', compact('galleries', 'socialNetworks', 'websiteInfo'));
+        return view('gallery', compact('galleries', 'socialNetworks', 'websiteInfo', 'services'));
     }
 }
