@@ -18,6 +18,7 @@
                 <a class="btn btn-link" href="/">Home</a>
                 <a class="btn btn-link" href="/services-web">Services</a>
                 <a class="btn btn-link" href="/gallery">Gallery</a>
+                <a class="btn btn-link" href="/about-me">About me</a>
                 <a class="btn btn-link" href="/contact">Contact Ust</a>
             </div>
             <div class="col-lg-3 col-md-6">

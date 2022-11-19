@@ -17,7 +17,7 @@ Route::get('/', [\App\Http\Controllers\WebsiteController::class, 'index'])->name
 Route::get('/gallery', [\App\Http\Controllers\GallerySiteController::class, 'index'])->name('gallery');
 Route::get('/services-web', [\App\Http\Controllers\ServicesSiteController::class, 'index'])->name('services-web');
 Route::get('/contact', [\App\Http\Controllers\ContactSiteController::class, 'index'])->name('contact');
-Route::get('/about-me', [\App\Http\Controllers\ContactSiteController::class, 'index'])->name('about-me');
+Route::get('/about-me', [\App\Http\Controllers\AboutmeSiteController::class, 'index'])->name('about-me');
 
 Auth::routes();
 Route::resource('website-info', \App\Http\Controllers\WebsiteInfoController::class);
