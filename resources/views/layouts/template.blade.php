@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Arturo Lopez - Photographic Agency</title>
+    <title>Luis Lopez - Photographic & Video</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">

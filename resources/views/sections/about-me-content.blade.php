@@ -15,6 +15,8 @@
                             <div class="container">
                                 <h2>Luis Lopez</h2>
                                 <p class="title">CEO & Founder</p>
+                                <p>Luis Lopez  con mas de 15 años de experiencia en fotografía y video.creando y diseñando . comprometidos a realizar con pasión cada uno de los eventos que son irrepetibles en nuestra vida, utilizando accesorios y fondos para obtener composiciones basadas en la petición del cliente. Además de tomar imágenes de alta calidad, nuestro de trabajo cuenta con todo el equipo necesario para la realización de cualquier evento . cámaras, , luces, diferentes lentes  estabilizadores solo por mencionar  algo del equipo de trabajo .radicados en Springdale AR.</p>
+                                <br>
                                 <p>Luis Lopez with more than 15 years of experience in photography and video, creating and designing. committed to carrying out with passion each one of the events that are unrepeatable in our lives, using accessories and backgrounds to obtain compositions based on the client's request. In addition to taking high-quality images, our staff has all the necessary equipment to carry out any event. cameras, lights, different stabilizer lenses just to mention some of the work team. Based in Springdale AR.</p>
                                 <div class="ps-3">
                                     <p class="mb-2">Email</p>
