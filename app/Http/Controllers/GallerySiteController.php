@@ -18,7 +18,22 @@ class GallerySiteController extends Controller
             $id = $value->id;
         }
         $services = Service::all()->where('is_active', true);
-        $galleries = Gallery::all()->where('is_active', true);
+        $galleries = Gallery::all()->where('is_active', true)->where('name', '!=', 'Boudoir');
+        $socialNetworks = SocialNetwork::all()->where('is_active', true);
+        $websiteInfo = WebsiteInfo::find($id);
+        return view('gallery', compact('galleries', 'socialNetworks', 'websiteInfo', 'services'));
+    }
+
+    public function getSection()
+    {
+        $section = request()->input('title') ;
+        $id = null;
+        $websiteInfos = WebsiteInfo::all()->where('index', 1);
+        foreach ($websiteInfos as $value){
+            $id = $value->id;
+        }
+        $services = Service::all()->where('is_active', true);
+        $galleries = Gallery::all()->where('is_active', true)->where('name', $section);
         $socialNetworks = SocialNetwork::all()->where('is_active', true);
         $websiteInfo = WebsiteInfo::find($id);
         return view('gallery', compact('galleries', 'socialNetworks', 'websiteInfo', 'services'));

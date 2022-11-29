@@ -45,11 +45,15 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Newsletter</h5>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <h5 class="text-light mb-4">Boudoir</h5>
+                <p>The boudoir is a type of female photography in which the elegance and sensuality of the woman prevail above all else. These photographs recreate an atmosphere of intimacy and calm, a moment of the woman in connection with herself</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <form method="POST" action="{{ route('gallery') }}">
+                        @csrf
+                        <input required class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
+                        <input type="hidden" name="title" value="Boudoir">
+                        <button type="submit" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">View More</button>
+                    </form>
                 </div>
             </div>
         </div>
