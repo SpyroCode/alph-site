@@ -19,7 +19,7 @@ class WebsiteController extends Controller
             $id = $value->id;
         }
         $services = Service::all()->where('is_active', true);
-        $galleries = Gallery::all()->where('is_active', true);
+        $galleries = Gallery::all()->where('is_active', true)->where('name', '!=', 'Boudoir');;
         $socialNetworks = SocialNetwork::all()->where('is_active', true);
         $websiteInfo = WebsiteInfo::find($id);
         return view('website', compact('galleries', 'socialNetworks', 'websiteInfo', 'services'));
